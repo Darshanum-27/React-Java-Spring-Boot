@@ -4,9 +4,25 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import axios from "axios";
+import {useState,useEffect} from 'react'
 
 const GetAll = () => {
-    let data = [{"id":"1","name":"Brush","Time":"Monday 8:80AM", "DeadLine": "Thursday 12:00PM"},{"id":"2","name":"Apply for Jobs","Time":"Monday 8:80AM", "DeadLine": "Everyday"}]
+    let [data,setData] = useState([])
+
+    useEffect(()=>{
+        axios.get("http://localhost:8080/getAllData").then((response) => {
+            setData(response.data)
+        })},[])
+
+    const taskDelete = (e, id1) =>{
+        let url = "http://localhost:8080/deleteTask/"+id1
+        axios.post(url).then((respone) =>{
+            console.log("deleted successfully")
+            setData(respone.data)
+        })
+    }
+
     return(
         <div>
             {
@@ -14,18 +30,18 @@ const GetAll = () => {
                     <div style={{margin:"20px"}}>
                         <Card sx={{ minWidth: 275 }}>
                             <CardContent>
-                                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                                <Typography variant="h5" component="div">
                                 Task: {data1.name}
                                 </Typography>
-                                <Typography variant="h5" component="div">
-                                Added Time: {data1.Time}
+                                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                                Added Time: {data1.time}
                                 </Typography>
                                 <Typography variant="body2">
-                                DeadLine:  2{data1.DeadLine}
+                                DeadLine: {data1.deadLine}
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">Learn More</Button>
+                                <Button size="small" onClick={e => taskDelete(e,data1.id)}>DELETE</Button>
                             </CardActions>
                         </Card>
                     </div>
