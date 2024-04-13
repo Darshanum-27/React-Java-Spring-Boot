@@ -1,10 +1,8 @@
 package com.todoTask.demo.Service;
 
 import com.todoTask.demo.Model.taskData;
-import com.todoTask.demo.Model.id;
 import com.todoTask.demo.Repo.Repo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

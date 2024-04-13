@@ -11,8 +11,7 @@ const GetAll = () => {
     let [data,setData] = useState([])
 
     useEffect(()=>{
-        axios.get("http://localhost:8080/getAllData").then((response) => {
-            setData(response.data)
+        axios.get("http://localhost:8080/getAllData").then((response) => { setData(response.data)
         })},[])
 
     const taskDelete = (e, id1) =>{
@@ -24,11 +23,11 @@ const GetAll = () => {
     }
 
     return(
-        <div>
+        <div style={{dipslay:"block",position:"absolute",top:"10%",left:"1%", overflow:"scroll"}}>
             {
                 data.map((data1)=>(
                     <div style={{margin:"20px"}}>
-                        <Card sx={{ minWidth: 275 }}>
+                        <Card sx={{ minWidth: "1450px" }}>
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                 Task: {data1.name}

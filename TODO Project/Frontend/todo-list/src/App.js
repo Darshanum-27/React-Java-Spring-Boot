@@ -6,16 +6,16 @@ import AddTask from './Components/AddTask';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-        <Route path="/getAll" element={<GetAll />} />
-        <Route path="/addTask" element={<AddTask />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+            <Route path="/getAll" element={<GetAll />} />
+            <Route path="/addTask" element={<AddTask />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
       </header>
     </div>
   );
