@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/React-Java-Spring-Boot/TODO%20Project/Frontend/todo-list/static/css/main.fd26ed1f.css",
+    "main.js": "/React-Java-Spring-Boot/TODO%20Project/Frontend/todo-list/static/js/main.7d18b7cb.js",
+    "static/js/453.0d2defce.chunk.js": "/React-Java-Spring-Boot/TODO%20Project/Frontend/todo-list/static/js/453.0d2defce.chunk.js",
+    "static/media/backgroundVideo.mp4": "/React-Java-Spring-Boot/TODO%20Project/Frontend/todo-list/static/media/backgroundVideo.fcf31bd38c173fe65d8d.mp4",
+    "index.html": "/React-Java-Spring-Boot/TODO%20Project/Frontend/todo-list/index.html",
+    "main.fd26ed1f.css.map": "/React-Java-Spring-Boot/TODO%20Project/Frontend/todo-list/static/css/main.fd26ed1f.css.map",
+    "main.7d18b7cb.js.map": "/React-Java-Spring-Boot/TODO%20Project/Frontend/todo-list/static/js/main.7d18b7cb.js.map",
+    "453.0d2defce.chunk.js.map": "/React-Java-Spring-Boot/TODO%20Project/Frontend/todo-list/static/js/453.0d2defce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd26ed1f.css",
+    "static/js/main.7d18b7cb.js"
+  ]
+}
