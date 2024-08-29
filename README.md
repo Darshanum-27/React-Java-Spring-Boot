@@ -1,7 +1,7 @@
 
 # Take Home Assignment
 
-This project is a simple web application developed as part of the take-home assignment for the junior software engineer position. The application is built using React.js for the frontend and Django for the backend. It is deployed on AWS using S3, EC2, VPC, Subnets, CloudFront and IAM.
+This project is a simple web application developed to demonstrate frontend and backend connection using React.js (frontend) and Java Spring Boot (backend).
 
 ## Demo
 [LINK](https://drive.google.com/file/d/161daVAKOoihpB7cVjylH-ynNsxLj2SzT/view?usp=drive_link)
