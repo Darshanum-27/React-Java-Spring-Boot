@@ -31,7 +31,7 @@ This project is a simple web application developed to demonstrate frontend and b
 
 Create a new React app:
 ```Bash
-npx create-react-app frontend
+npx create-react-app todo-list
 cd frontend
 ```
 
@@ -44,3 +44,6 @@ Start the React development server:
 ```Bash
 npm start
 ```
+
+For Backend installation follow the below provided link:
+https://docs.spring.io/spring-boot/installing.html
